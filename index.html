@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Mega Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>AI Mega Generator</h1>
+        <p>Create Images • Videos • Text • Audio</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <label>Choose Mode</label>
+            <select id="mode">
+                <option value="text">Generate Text / Articles</option>
+                <option value="image">Generate Image</option>
+                <option value="audio">Generate Audio (TTS)</option>
+                <option value="video">Generate Video</option>
+            </select>
+
+            <label>Enter Prompt</label>
+            <textarea id="prompt" placeholder="Describe what you want..."></textarea>
+
+            <div id="extra"></div>
+
+            <button id="generateBtn">Generate</button>
+        </div>
+
+        <div class="card output">
+            <h2>Output</h2>
+            <div id="result"></div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
